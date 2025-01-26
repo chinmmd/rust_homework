@@ -63,7 +63,7 @@ impl GradeProcessor for Classroom{
                 let sum = s.process_grades();
                 match sum{
                     Ok(Some(value)) => sums+=value,
-                    Ok(None) => print!("no value found"),
+                    Ok(None) => println!("no value found"),
                     Err(e) => {
                         println!("{e}")
                     },
